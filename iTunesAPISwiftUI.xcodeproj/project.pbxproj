@@ -17,6 +17,7 @@
 		CD4D3641238971C700516836 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4D3640238971C700516836 /* Track.swift */; };
 		CD4D3643238973B400516836 /* iTunesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4D3642238973B400516836 /* iTunesAPI.swift */; };
 		CD4D36452389759200516836 /* iTunesNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4D36442389759200516836 /* iTunesNetwork.swift */; };
+		CD4D364B2389D3A100516836 /* TrackList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4D364A2389D3A100516836 /* TrackList.swift */; };
 		CDC6CF5D23957EED001A47D1 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC6CF5C23957EED001A47D1 /* Resource.swift */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,7 @@
 		CD4D3640238971C700516836 /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
 		CD4D3642238973B400516836 /* iTunesAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunesAPI.swift; sourceTree = "<group>"; };
 		CD4D36442389759200516836 /* iTunesNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunesNetwork.swift; sourceTree = "<group>"; };
+		CD4D364A2389D3A100516836 /* TrackList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackList.swift; sourceTree = "<group>"; };
 		CDC6CF5C23957EED001A47D1 /* Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -90,6 +92,7 @@
 			children = (
 				CD4D362C2389708700516836 /* AppDelegate.swift */,
 				CD4D3640238971C700516836 /* Track.swift */,
+				CD4D364A2389D3A100516836 /* TrackList.swift */,
 				CDC6CF5C23957EED001A47D1 /* Resource.swift */,
 				CD4D3642238973B400516836 /* iTunesAPI.swift */,
 				CD4D36442389759200516836 /* iTunesNetwork.swift */,
@@ -226,6 +229,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD4D364B2389D3A100516836 /* TrackList.swift in Sources */,
 				CD4D362D2389708700516836 /* AppDelegate.swift in Sources */,
 				CDC6CF5D23957EED001A47D1 /* Resource.swift in Sources */,
 				CD4D3643238973B400516836 /* iTunesAPI.swift in Sources */,
