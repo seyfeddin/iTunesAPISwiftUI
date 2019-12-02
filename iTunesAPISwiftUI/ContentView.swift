@@ -7,10 +7,22 @@
 //
 
 import SwiftUI
+import Combine
 
 struct ContentView: View {
+
+    @ObservedObject var resource: Resource = Resource(endpoint: .search(query: "Ezhel"))
+
     var body: some View {
-        Text("Hello, World!")
+        NavigationView {
+            Group {
+                if resource.value == nil {
+                    Text("Yükleniyor…")
+                } else {
+                    TrackList(tracks: resource.value ?? [])
+                }
+            }.navigationBarTitle("Ezhel")
+        }
     }
 }
 
