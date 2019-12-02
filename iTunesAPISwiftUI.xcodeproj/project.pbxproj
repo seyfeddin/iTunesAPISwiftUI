@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		54529ECDEE0F9F489DA1DF10 /* Pods_iTunesAPISwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1907E0753D8413939A4444F8 /* Pods_iTunesAPISwiftUI.framework */; };
 		CD4D362D2389708700516836 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4D362C2389708700516836 /* AppDelegate.swift */; };
 		CD4D362F2389708700516836 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4D362E2389708700516836 /* SceneDelegate.swift */; };
 		CD4D36312389708700516836 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4D36302389708700516836 /* ContentView.swift */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		01F37E7426570B0D3128D68C /* Pods-iTunesAPISwiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTunesAPISwiftUI.debug.xcconfig"; path = "Target Support Files/Pods-iTunesAPISwiftUI/Pods-iTunesAPISwiftUI.debug.xcconfig"; sourceTree = "<group>"; };
+		1907E0753D8413939A4444F8 /* Pods_iTunesAPISwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iTunesAPISwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		977582853A578A0B1EFB9C88 /* Pods-iTunesAPISwiftUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTunesAPISwiftUI.release.xcconfig"; path = "Target Support Files/Pods-iTunesAPISwiftUI/Pods-iTunesAPISwiftUI.release.xcconfig"; sourceTree = "<group>"; };
 		CD4D36292389708700516836 /* iTunesAPISwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTunesAPISwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD4D362C2389708700516836 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD4D362E2389708700516836 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54529ECDEE0F9F489DA1DF10 /* Pods_iTunesAPISwiftUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		90395ECC32A98C0A0CEDFE34 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				01F37E7426570B0D3128D68C /* Pods-iTunesAPISwiftUI.debug.xcconfig */,
+				977582853A578A0B1EFB9C88 /* Pods-iTunesAPISwiftUI.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9484A50A2A57058770C9C7AC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1907E0753D8413939A4444F8 /* Pods_iTunesAPISwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CD4D36202389708700516836 = {
 			isa = PBXGroup;
 			children = (
 				CD4D362B2389708700516836 /* iTunesAPISwiftUI */,
 				CD4D362A2389708700516836 /* Products */,
+				90395ECC32A98C0A0CEDFE34 /* Pods */,
+				9484A50A2A57058770C9C7AC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -82,9 +106,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CD4D363D2389708A00516836 /* Build configuration list for PBXNativeTarget "iTunesAPISwiftUI" */;
 			buildPhases = (
+				740D2B6BAFD10ABFEAABB96F /* [CP] Check Pods Manifest.lock */,
 				CD4D36252389708700516836 /* Sources */,
 				CD4D36262389708700516836 /* Frameworks */,
 				CD4D36272389708700516836 /* Resources */,
+				9DC96B874705A4353406E65F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -140,6 +166,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		740D2B6BAFD10ABFEAABB96F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iTunesAPISwiftUI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9DC96B874705A4353406E65F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iTunesAPISwiftUI/Pods-iTunesAPISwiftUI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iTunesAPISwiftUI/Pods-iTunesAPISwiftUI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iTunesAPISwiftUI/Pods-iTunesAPISwiftUI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CD4D36252389708700516836 /* Sources */ = {
@@ -282,6 +350,7 @@
 		};
 		CD4D363E2389708A00516836 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01F37E7426570B0D3128D68C /* Pods-iTunesAPISwiftUI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -302,6 +371,7 @@
 		};
 		CD4D363F2389708A00516836 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 977582853A578A0B1EFB9C88 /* Pods-iTunesAPISwiftUI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
