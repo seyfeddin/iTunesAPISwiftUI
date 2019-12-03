@@ -26,7 +26,7 @@ struct TrackList_Previews: PreviewProvider {
 
         ListItem(track: Track(trackID: 1, artistName: "Ezhel",
         collectionName: "Müptezhel", trackName: "Geceler", previewUrl: "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview118/v4/4b/15/a0/4b15a06d-4b5d-7099-1e0e-354300be5899/mzaf_9014807440103508832.plus.aac.p.m4a", artworkUrl60: "https://is2-ssl.mzstatic.com/image/thumb/Music128/v4/f0/e1/16/f0e116a9-2579-7c25-9cca-ff550510bfb8/source/60x60bb.jpg", artworkUrl100: "https://is2-ssl.mzstatic.com/image/thumb/Music128/v4/f0/e1/16/f0e116a9-2579-7c25-9cca-ff550510bfb8/source/100x100bb.jpg")
-        ).previewLayout(PreviewLayout.fixed(width: 375, height: 200))
+        ).previewLayout(PreviewLayout.fixed(width: 250, height: 75))
     }
 }
 
@@ -55,7 +55,5 @@ struct ListItem: View {
             }
         })
             .padding()
-            .background(Color(white: 0.96))
-            .clipShape(RoundedRectangle(cornerRadius: 12.0))
     }
 }
