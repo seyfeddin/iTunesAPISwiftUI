@@ -21,7 +21,11 @@ struct ContentView: View {
                 } else {
                     TrackList(tracks: resource.value ?? [])
                 }
-            }.navigationBarTitle("Ezhel")
+            }.navigationBarTitle(resource.query).navigationBarItems(
+                trailing:                     SearchBar(searchText: $resource.query, commitBlock: { query in
+                    resource.search(query: query)
+                })
+            )
         }
     }
 }
