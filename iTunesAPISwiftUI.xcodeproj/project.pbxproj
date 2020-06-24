@@ -18,6 +18,7 @@
 		CD4D364B2389D3A100516836 /* TrackList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4D364A2389D3A100516836 /* TrackList.swift */; };
 		CD8EC82224A401FE0090D938 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8EC82124A401FE0090D938 /* App.swift */; };
 		CD8EC82424A406C80090D938 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8EC82324A406C80090D938 /* SearchBar.swift */; };
+		CD8EC82624A40BBD0090D938 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8EC82524A40BBD0090D938 /* DetailView.swift */; };
 		CDC6CF5D23957EED001A47D1 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC6CF5C23957EED001A47D1 /* Resource.swift */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +38,7 @@
 		CD4D364A2389D3A100516836 /* TrackList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackList.swift; sourceTree = "<group>"; };
 		CD8EC82124A401FE0090D938 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		CD8EC82324A406C80090D938 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		CD8EC82524A40BBD0090D938 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		CDC6CF5C23957EED001A47D1 /* Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -96,6 +98,7 @@
 				CD4D3642238973B400516836 /* iTunesAPI.swift */,
 				CD4D36442389759200516836 /* iTunesNetwork.swift */,
 				CD4D36302389708700516836 /* ContentView.swift */,
+				CD8EC82524A40BBD0090D938 /* DetailView.swift */,
 				CD4D36322389708A00516836 /* Assets.xcassets */,
 				CD4D36372389708A00516836 /* LaunchScreen.storyboard */,
 				CD4D363A2389708A00516836 /* Info.plist */,
@@ -230,6 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD8EC82224A401FE0090D938 /* App.swift in Sources */,
+				CD8EC82624A40BBD0090D938 /* DetailView.swift in Sources */,
 				CD4D364B2389D3A100516836 /* TrackList.swift in Sources */,
 				CDC6CF5D23957EED001A47D1 /* Resource.swift in Sources */,
 				CD4D3643238973B400516836 /* iTunesAPI.swift in Sources */,
