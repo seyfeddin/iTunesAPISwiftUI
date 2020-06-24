@@ -14,8 +14,12 @@ struct TrackList: View {
     var tracks: [Track]
 
     var body: some View {
-        List(tracks) { track in
-            ListItem(track: track)
+        List {
+            ForEach(tracks) { track in
+                NavigationLink(destination: DetailView(songTitle: track.trackName)) {
+                    ListItem(track: track)
+                }
+            }
         }
     }
 }
