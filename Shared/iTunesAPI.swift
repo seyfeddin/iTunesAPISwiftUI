@@ -6,7 +6,9 @@
 //  Copyright © 2019 ThreadCo. All rights reserved.
 //
 
+import Foundation
 import Moya
+import Alamofire
 
 enum TunesAPI {
 
@@ -25,7 +27,7 @@ extension TunesAPI: TargetType {
         }
     }
 
-    var method: Method {
+    var method: Moya.Method {
         return .get
     }
 

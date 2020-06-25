@@ -15,9 +15,15 @@ struct TrackList: View {
 
     var body: some View {
         List {
-            ForEach(tracks) { track in
-                NavigationLink(destination: DetailView(songTitle: track.trackName)) {
-                    ListItem(track: track)
+            if tracks.isEmpty {
+                Group {
+                    Text("Enter a search query to start")
+                }
+            } else {
+                ForEach(tracks) { track in
+                    NavigationLink(destination: DetailView(songTitle: track.trackName)) {
+                        ListItem(track: track)
+                    }
                 }
             }
         }

@@ -11,7 +11,7 @@ import Combine
 
 struct ContentView: View {
 
-    @ObservedObject var resource: Resource = Resource(endpoint: .search(query: "Ezhel"))
+    @ObservedObject var resource: Resource = Resource(endpoint: .search(query: ""))
 
     var body: some View {
         NavigationView {
