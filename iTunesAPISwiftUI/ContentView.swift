@@ -26,7 +26,8 @@ struct ContentView: View {
                         resource.search(query: query)
                     })
                 }
-            }.navigationBarTitle(resource.query)
+            }.navigationBarTitle(resource.query.isEmpty ? "iTunes API" : resource.query, displayMode: resource.query.isEmpty ? .inline : .large)
+
         }
     }
 }
