@@ -13,12 +13,19 @@ struct TrackList: View {
 
     var tracks: [Track]
 
+    @Binding var searchText: String
+
+    var commitBlock: (String) -> ()
+
     var body: some View {
         List {
+            Color(.sRGB, white: 1.0, opacity: 1.0)
+                .overlay(SearchBar(searchText: $searchText, commitBlock: commitBlock))
+                .cornerRadius(5.0)
+                .listRowBackground(Color(.sRGB, white: 0.95, opacity: 1.0))
             if tracks.isEmpty {
-                Group {
-                    Text("Enter a search query to start")
-                }
+                Text("Enter a search query to start")
+                    .padding()
             } else {
                 ForEach(tracks) { track in
                     NavigationLink(destination: DetailView(songTitle: track.trackName)) {

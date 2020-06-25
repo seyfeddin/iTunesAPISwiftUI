@@ -16,16 +16,17 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             Group {
-                if resource.value == nil {
-                    Text("Yükleniyor…")
+                if resource.isLoading {
+                    Text("Loading…")
                 } else {
-                    TrackList(tracks: resource.value ?? [])
+                    TrackList(
+                        tracks: resource.value ?? [],
+                        searchText: $resource.query,
+                    commitBlock: { query in
+                        resource.search(query: query)
+                    })
                 }
-            }.navigationBarTitle(resource.query).navigationBarItems(
-                trailing:                     SearchBar(searchText: $resource.query, commitBlock: { query in
-                    resource.search(query: query)
-                })
-            )
+            }.navigationBarTitle(resource.query)
         }
     }
 }
