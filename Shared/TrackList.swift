@@ -19,10 +19,7 @@ struct TrackList: View {
 
     var body: some View {
         List {
-            Color(.sRGB, white: 1.0, opacity: 1.0)
-                .overlay(SearchBar(searchText: $searchText, commitBlock: commitBlock))
-                .cornerRadius(5.0)
-                .listRowBackground(Color(.sRGB, white: 0.95, opacity: 1.0))
+            SearchBarItem(searchText: $searchText, commitBlock: commitBlock)
             if tracks.isEmpty {
                 Text("Enter a search query to start")
                     .padding()
@@ -74,3 +71,18 @@ struct ListItem: View {
             .padding()
     }
 }
+
+struct SearchBarItem: View {
+
+    @Binding var searchText: String
+
+    var commitBlock: (String) -> ()
+
+    var body: some View {
+        Color(.sRGB, white: 1.0, opacity: 1.0)
+            .overlay(SearchBar(searchText: $searchText, commitBlock: commitBlock))
+            .cornerRadius(5.0)
+            .listRowBackground(Color(.sRGB, white: 0.95, opacity: 1.0))
+    }
+}
+
