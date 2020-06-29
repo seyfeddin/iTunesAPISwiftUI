@@ -13,6 +13,15 @@ struct SearchBar : View {
 
     var commitBlock: (String) -> ()
 
+    @State var shouldClean = false {
+        didSet {
+            if shouldClean {
+                searchText = ""
+                shouldClean = false
+            }
+        }
+    }
+
     var body: some View {
         HStack {
             Image(systemName: "magnifyingglass").foregroundColor(.secondary)
@@ -26,7 +35,8 @@ struct SearchBar : View {
                            UIApplication.shared.keyWindow?.endEditing(true)
                       })
             Button(action: {
-                self.searchText = ""
+                shouldClean = true
+                commitBlock(searchText)
             }) {
                 Image(systemName: "xmark.circle.fill").foregroundColor(.secondary).opacity(searchText == "" ? 0 : 1)
             }
