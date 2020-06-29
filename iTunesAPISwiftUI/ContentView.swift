@@ -13,11 +13,13 @@ struct ContentView: View {
 
     @ObservedObject var resource: Resource = Resource(endpoint: .search(query: ""))
 
+    let progressStyle: CircularProgressViewStyle = CircularProgressViewStyle(tint: .black)
+
     var body: some View {
         NavigationView {
             Group {
                 if resource.isLoading {
-                    Text("Loading…")
+                    ProgressView().progressViewStyle(progressStyle)
                 } else {
                     TrackList(
                         tracks: resource.value ?? [],
