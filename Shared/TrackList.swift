@@ -21,8 +21,20 @@ struct TrackList: View {
         List {
             SearchBarItem(searchText: $searchText, commitBlock: commitBlock)
             if tracks.isEmpty {
-                Text("Enter a search query to start")
-                    .padding()
+                GeometryReader { geometry in
+                    Text("Enter a search query to start")
+                        .padding()
+                        .alignmentGuide(
+                            HorizontalAlignment.center,
+                            computeValue: {
+                                        $0[.leading]
+                            }
+                        )
+                        .position(
+                            x: geometry.size.width / 2,
+                            y: geometry.size.height / 2
+                        )
+                }
             } else {
                 ForEach(tracks) { track in
                     NavigationLink(destination: DetailView(songTitle: track.trackName)) {

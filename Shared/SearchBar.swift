@@ -32,13 +32,13 @@ struct SearchBar : View {
                       onCommit: {
                         commitBlock(searchText)
 
-                           UIApplication.shared.keyWindow?.endEditing(true)
+                        UIApplication.shared.keyWindow?.endEditing(true)
                       })
             Button(action: {
                 shouldClean = true
                 commitBlock(searchText)
             }) {
-                Image(systemName: "xmark.circle.fill").foregroundColor(.secondary).opacity(searchText == "" ? 0 : 1)
+                Image(systemName: "xmark.circle.fill").foregroundColor(.secondary).opacity(!searchText.isEmpty ? 1 : 0)
             }
         }.padding(.horizontal)
     }
