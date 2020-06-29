@@ -10,79 +10,62 @@ import Foundation
 import Combine
 
 final class Resource: ObservableObject {
-    var endpoint: TunesAPI
     var value: [Track]? {
         didSet {
-            if let value = value {
-                DispatchQueue.main.async {
-                    self.objectWillChange.send(value)
-                }
-            }
+            objectWillChange.send(value ?? [])
         }
     }
-    var query: String = "" {
-        didSet {
-            endpoint = .search(query: query)
-        }
-    }
+    var query: String = ""
     var isLoading = false {
         didSet {
-            DispatchQueue.main.async {
-                self.objectWillChange.send(self.value ?? [])
-            }
+            objectWillChange.send(value ?? [])
         }
     }
 
     var objectWillChange: PassthroughSubject<[Track], Never> = PassthroughSubject()
 
-    init(endpoint: TunesAPI) {
-        self.endpoint = endpoint
-        // reload()
-    }
+    var storage = Set<AnyCancellable>()
 
     func search(query: String) {
 
         self.query = query
 
         isLoading = true
-        TunesNetwork.request(
-            target: endpoint,
-            success: { (data) in
 
-                self.isLoading = false
+        var components = URLComponents(string: "https://itunes.apple.com/")!
+        components.path = "/search"
+        var queryItems: [URLQueryItem] = []
+        queryItems.append(URLQueryItem(name: "entity", value: "song"))
+        queryItems.append(URLQueryItem(name: "term", value: query))
+        components.queryItems = queryItems
+        let request = URLRequest(url: components.url!)
+        print(request)
 
+        URLSession.shared.dataTaskPublisher(for: request)
+            .map {
+                $0.data
+            }
+            .tryMap({ (data) -> JSONDecoder.Input in
                 do {
                     let jsonObject = try JSONSerialization.jsonObject(with: data, options: []) as! [String: Any]
-                    let resultsData = try JSONSerialization.data(withJSONObject: jsonObject["results"]!, options: [.prettyPrinted])
-                    let tracks = try JSONDecoder().decode([Track].self, from: resultsData)
-                    self.value = tracks
+                    return try JSONSerialization.data(withJSONObject: jsonObject["results"] ?? jsonObject, options: [.prettyPrinted])
                 } catch {
-                    print(error)
+                    throw error
                 }
-        }, error: { (errorString, statusCode) in
-            self.isLoading = false
-        }) { (error) in
-            self.isLoading = false
-        }
+            })
+            .decode(type: [Track].self, decoder: JSONDecoder())
+            .eraseToAnyPublisher()
+            .receive(on: DispatchQueue.main)
+            .sink { completion in
+                self.isLoading = false
+                switch completion {
+                case .failure(let error):
+                    print(error)
+                case .finished:
+                    print("finished request successfully")
+                }
+            } receiveValue: { tracks in
+                self.value = tracks
+            }.store(in: &storage)
     }
-
-//    func reload() {
-//        TunesNetwork.request(
-//            target: endpoint,
-//            success: { (data) in
-//
-//                do {
-//                    let jsonObject = try JSONSerialization.jsonObject(with: data, options: []) as! [String: Any]
-//                    let resultsData = try JSONSerialization.data(withJSONObject: jsonObject["results"]!, options: [.prettyPrinted])
-//                    let tracks = try JSONDecoder().decode([Track].self, from: resultsData)
-//                    self.value = tracks
-//                } catch {
-//                    print(error)
-//                }
-//        }, error: { (errorString, statusCode) in
-//
-//        }) { (error) in
-//
-//        }
-//    }
 }

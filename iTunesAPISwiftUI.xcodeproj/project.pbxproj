@@ -7,9 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CD03F0BF24A4138700D3EC38 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = CD03F0BE24A4138700D3EC38 /* Moya */; };
 		CD03F0C224A413E400D3EC38 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = CD03F0C124A413E400D3EC38 /* SDWebImageSwiftUI */; };
-		CD03F0C524A413FB00D3EC38 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = CD03F0C424A413FB00D3EC38 /* Moya */; };
 		CD03F0C724A413FF00D3EC38 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = CD03F0C624A413FF00D3EC38 /* SDWebImageSwiftUI */; };
 		CD8EC84324A40EDB0090D938 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8EC84224A40EDB0090D938 /* Tests_iOS.swift */; };
 		CD8EC84E24A40EDB0090D938 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8EC84D24A40EDB0090D938 /* Tests_macOS.swift */; };
@@ -24,14 +22,10 @@
 		CD8EC86624A40F7C0090D938 /* TrackList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4D364A2389D3A100516836 /* TrackList.swift */; };
 		CD8EC86724A40F7C0090D938 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8EC82324A406C80090D938 /* SearchBar.swift */; };
 		CD8EC86824A40F7C0090D938 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4D3640238971C700516836 /* Track.swift */; };
-		CD8EC86924A40F7C0090D938 /* iTunesNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4D36442389759200516836 /* iTunesNetwork.swift */; };
-		CD8EC86A24A40F7C0090D938 /* iTunesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4D3642238973B400516836 /* iTunesAPI.swift */; };
 		CD8EC86B24A40F7C0090D938 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC6CF5C23957EED001A47D1 /* Resource.swift */; };
 		CD8EC86C24A40F7C0090D938 /* TrackList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4D364A2389D3A100516836 /* TrackList.swift */; };
 		CD8EC86D24A40F7C0090D938 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8EC82324A406C80090D938 /* SearchBar.swift */; };
 		CD8EC86E24A40F7C0090D938 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4D3640238971C700516836 /* Track.swift */; };
-		CD8EC86F24A40F7C0090D938 /* iTunesNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4D36442389759200516836 /* iTunesNetwork.swift */; };
-		CD8EC87024A40F7C0090D938 /* iTunesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4D3642238973B400516836 /* iTunesAPI.swift */; };
 		CD8EC87124A40F7C0090D938 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC6CF5C23957EED001A47D1 /* Resource.swift */; };
 /* End PBXBuildFile section */
 
@@ -58,8 +52,6 @@
 		CD4D36352389708A00516836 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CD4D36382389708A00516836 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD4D3640238971C700516836 /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
-		CD4D3642238973B400516836 /* iTunesAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunesAPI.swift; sourceTree = "<group>"; };
-		CD4D36442389759200516836 /* iTunesNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunesNetwork.swift; sourceTree = "<group>"; };
 		CD4D364A2389D3A100516836 /* TrackList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackList.swift; sourceTree = "<group>"; };
 		CD8EC82324A406C80090D938 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		CD8EC82524A40BBD0090D938 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
@@ -85,7 +77,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD03F0C224A413E400D3EC38 /* SDWebImageSwiftUI in Frameworks */,
-				CD03F0BF24A4138700D3EC38 /* Moya in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,7 +85,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD03F0C724A413FF00D3EC38 /* SDWebImageSwiftUI in Frameworks */,
-				CD03F0C524A413FB00D3EC38 /* Moya in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,8 +161,6 @@
 				CD4D3640238971C700516836 /* Track.swift */,
 				CD4D364A2389D3A100516836 /* TrackList.swift */,
 				CDC6CF5C23957EED001A47D1 /* Resource.swift */,
-				CD4D3642238973B400516836 /* iTunesAPI.swift */,
-				CD4D36442389759200516836 /* iTunesNetwork.swift */,
 				CD4D36302389708700516836 /* ContentView.swift */,
 				CD8EC82524A40BBD0090D938 /* DetailView.swift */,
 				CD8EC82324A406C80090D938 /* SearchBar.swift */,
@@ -234,7 +222,6 @@
 			);
 			name = iOS;
 			packageProductDependencies = (
-				CD03F0BE24A4138700D3EC38 /* Moya */,
 				CD03F0C124A413E400D3EC38 /* SDWebImageSwiftUI */,
 			);
 			productName = iOS;
@@ -255,7 +242,6 @@
 			);
 			name = macOS;
 			packageProductDependencies = (
-				CD03F0C424A413FB00D3EC38 /* Moya */,
 				CD03F0C624A413FF00D3EC38 /* SDWebImageSwiftUI */,
 			);
 			productName = macOS;
@@ -334,7 +320,6 @@
 			);
 			mainGroup = CD4D36202389708700516836;
 			packageReferences = (
-				CD03F0BD24A4138700D3EC38 /* XCRemoteSwiftPackageReference "Moya" */,
 				CD03F0C024A413E400D3EC38 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
 			);
 			productRefGroup = CD4D362A2389708700516836 /* Products */;
@@ -392,9 +377,7 @@
 				CD8EC86424A40F750090D938 /* DetailView.swift in Sources */,
 				CD8EC86724A40F7C0090D938 /* SearchBar.swift in Sources */,
 				CD8EC85024A40EDB0090D938 /* iTunesAPISwiftUIApp.swift in Sources */,
-				CD8EC86A24A40F7C0090D938 /* iTunesAPI.swift in Sources */,
 				CD8EC86624A40F7C0090D938 /* TrackList.swift in Sources */,
-				CD8EC86924A40F7C0090D938 /* iTunesNetwork.swift in Sources */,
 				CD8EC86824A40F7C0090D938 /* Track.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -408,9 +391,7 @@
 				CD8EC86524A40F750090D938 /* DetailView.swift in Sources */,
 				CD8EC86D24A40F7C0090D938 /* SearchBar.swift in Sources */,
 				CD8EC85124A40EDB0090D938 /* iTunesAPISwiftUIApp.swift in Sources */,
-				CD8EC87024A40F7C0090D938 /* iTunesAPI.swift in Sources */,
 				CD8EC86C24A40F7C0090D938 /* TrackList.swift in Sources */,
-				CD8EC86F24A40F7C0090D938 /* iTunesNetwork.swift in Sources */,
 				CD8EC86E24A40F7C0090D938 /* Track.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -812,14 +793,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		CD03F0BD24A4138700D3EC38 /* XCRemoteSwiftPackageReference "Moya" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "git@github.com:Moya/Moya.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 13.0.0;
-			};
-		};
 		CD03F0C024A413E400D3EC38 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "git@github.com:SDWebImage/SDWebImageSwiftUI.git";
@@ -831,20 +804,10 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		CD03F0BE24A4138700D3EC38 /* Moya */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = CD03F0BD24A4138700D3EC38 /* XCRemoteSwiftPackageReference "Moya" */;
-			productName = Moya;
-		};
 		CD03F0C124A413E400D3EC38 /* SDWebImageSwiftUI */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = CD03F0C024A413E400D3EC38 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
 			productName = SDWebImageSwiftUI;
-		};
-		CD03F0C424A413FB00D3EC38 /* Moya */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = CD03F0BD24A4138700D3EC38 /* XCRemoteSwiftPackageReference "Moya" */;
-			productName = Moya;
 		};
 		CD03F0C624A413FF00D3EC38 /* SDWebImageSwiftUI */ = {
 			isa = XCSwiftPackageProductDependency;

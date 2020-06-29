@@ -11,7 +11,7 @@ import Combine
 
 struct ContentView: View {
 
-    @ObservedObject var resource: Resource = Resource(endpoint: .search(query: ""))
+    @ObservedObject var resource = Resource()
 
     let progressStyle: CircularProgressViewStyle = CircularProgressViewStyle(tint: .black)
 
