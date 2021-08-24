@@ -17,6 +17,7 @@ struct ContentView: View {
 
     var body: some View {
         NavigationView {
+            #if !os(macOS)
             Group {
                 if resource.isLoading {
                     ProgressView().progressViewStyle(progressStyle)
@@ -28,8 +29,22 @@ struct ContentView: View {
                         resource.search(query: query)
                     })
                 }
-            }.navigationBarTitle(resource.query.isEmpty ? "iTunes API" : resource.query, displayMode: resource.query.isEmpty ? .inline : .large)
-
+            }
+            .navigationBarTitle(resource.query.isEmpty ? "iTunes API" : resource.query, displayMode: resource.query.isEmpty ? .inline : .large)
+            #else
+            Group {
+                if resource.isLoading {
+                    ProgressView().progressViewStyle(progressStyle)
+                } else {
+                    TrackList(
+                        tracks: resource.value ?? [],
+                        searchText: $resource.query,
+                    commitBlock: { query in
+                        resource.search(query: query)
+                    })
+                }
+            }
+            #endif
         }
     }
 }

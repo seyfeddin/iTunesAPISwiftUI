@@ -31,8 +31,9 @@ struct SearchBar : View {
                       },
                       onCommit: {
                         commitBlock(searchText)
-
+                        #if os(iOS)
                         UIApplication.shared.keyWindow?.endEditing(true)
+                        #endif
                       })
             Button(action: {
                 shouldClean = true

@@ -105,13 +105,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		CD03F0C324A413FB00D3EC38 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		CD4D36202389708700516836 = {
 			isa = PBXGroup;
 			children = (
@@ -122,7 +115,6 @@
 				CD8EC84124A40EDB0090D938 /* Tests iOS */,
 				CD8EC84C24A40EDB0090D938 /* Tests macOS */,
 				CD4D362A2389708700516836 /* Products */,
-				CD03F0C324A413FB00D3EC38 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -491,6 +483,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -546,6 +539,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -620,7 +614,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ThreadCo.iTunesAPISwiftUI;
 				PRODUCT_NAME = iTunesAPISwiftUI;
 				SDKROOT = macosx;
@@ -646,7 +640,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ThreadCo.iTunesAPISwiftUI;
 				PRODUCT_NAME = iTunesAPISwiftUI;
 				SDKROOT = macosx;
