@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CD03F0C224A413E400D3EC38 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = CD03F0C124A413E400D3EC38 /* SDWebImageSwiftUI */; };
-		CD03F0C724A413FF00D3EC38 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = CD03F0C624A413FF00D3EC38 /* SDWebImageSwiftUI */; };
+		CD30E71426D8BCF6008C904D /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = CD30E71326D8BCF6008C904D /* SDWebImageSwiftUI */; };
 		CD8EC84324A40EDB0090D938 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8EC84224A40EDB0090D938 /* Tests_iOS.swift */; };
 		CD8EC84E24A40EDB0090D938 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8EC84D24A40EDB0090D938 /* Tests_macOS.swift */; };
 		CD8EC85024A40EDB0090D938 /* iTunesAPISwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8EC82824A40ED30090D938 /* iTunesAPISwiftUIApp.swift */; };
@@ -76,7 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD03F0C224A413E400D3EC38 /* SDWebImageSwiftUI in Frameworks */,
+				CD30E71426D8BCF6008C904D /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,7 +83,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD03F0C724A413FF00D3EC38 /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,7 +212,7 @@
 			);
 			name = iOS;
 			packageProductDependencies = (
-				CD03F0C124A413E400D3EC38 /* SDWebImageSwiftUI */,
+				CD30E71326D8BCF6008C904D /* SDWebImageSwiftUI */,
 			);
 			productName = iOS;
 			productReference = CD8EC82F24A40EDB0090D938 /* iTunesAPISwiftUI.app */;
@@ -234,7 +232,6 @@
 			);
 			name = macOS;
 			packageProductDependencies = (
-				CD03F0C624A413FF00D3EC38 /* SDWebImageSwiftUI */,
 			);
 			productName = macOS;
 			productReference = CD8EC83624A40EDB0090D938 /* iTunesAPISwiftUI.app */;
@@ -312,7 +309,7 @@
 			);
 			mainGroup = CD4D36202389708700516836;
 			packageReferences = (
-				CD03F0C024A413E400D3EC38 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				CD30E71226D8BCF6008C904D /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
 			);
 			productRefGroup = CD4D362A2389708700516836 /* Products */;
 			projectDirPath = "";
@@ -555,7 +552,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = NT6HELKJQZ;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
@@ -566,6 +564,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ThreadCo.iTunesAPISwiftUI;
 				PRODUCT_NAME = iTunesAPISwiftUI;
+				PROVISIONING_PROFILE_SPECIFIER = "iTunes API SwiftUI Ad Hoc";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -578,7 +577,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = NT6HELKJQZ;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
@@ -589,6 +589,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ThreadCo.iTunesAPISwiftUI;
 				PRODUCT_NAME = iTunesAPISwiftUI;
+				PROVISIONING_PROFILE_SPECIFIER = "iTunes API SwiftUI Ad Hoc";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -787,25 +788,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		CD03F0C024A413E400D3EC38 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+		CD30E71226D8BCF6008C904D /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "git@github.com:SDWebImage/SDWebImageSwiftUI.git";
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
 			requirement = {
-				kind = upToNextMajorVersion;
+				kind = upToNextMinorVersion;
 				minimumVersion = 1.5.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		CD03F0C124A413E400D3EC38 /* SDWebImageSwiftUI */ = {
+		CD30E71326D8BCF6008C904D /* SDWebImageSwiftUI */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = CD03F0C024A413E400D3EC38 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
-			productName = SDWebImageSwiftUI;
-		};
-		CD03F0C624A413FF00D3EC38 /* SDWebImageSwiftUI */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = CD03F0C024A413E400D3EC38 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			package = CD30E71226D8BCF6008C904D /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
 			productName = SDWebImageSwiftUI;
 		};
 /* End XCSwiftPackageProductDependency section */

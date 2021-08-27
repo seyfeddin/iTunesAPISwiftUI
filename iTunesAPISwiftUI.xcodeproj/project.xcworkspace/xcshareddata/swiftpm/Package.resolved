@@ -6,13 +6,13 @@
         "repositoryURL": "https://github.com/SDWebImage/SDWebImage.git",
         "state": {
           "branch": null,
-          "revision": "df8bd89a865120fbb84427afc8e9cf7937b924f5",
-          "version": "5.8.2"
+          "revision": "76dd4b49110b8624317fc128e7fa0d8a252018bc",
+          "version": "5.11.1"
         }
       },
       {
         "package": "SDWebImageSwiftUI",
-        "repositoryURL": "git@github.com:SDWebImage/SDWebImageSwiftUI.git",
+        "repositoryURL": "https://github.com/SDWebImage/SDWebImageSwiftUI.git",
         "state": {
           "branch": null,
           "revision": "4c7f169e39bc35d6b80d42b8eb8301bee9cd0907",
