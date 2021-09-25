@@ -750,6 +750,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"iTunesAPISwiftUI Watch Extension/Preview Content\"";
 				DEVELOPMENT_TEAM = NT6HELKJQZ;
@@ -762,6 +763,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ThreadCo.iTunesAPISwiftUI.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -774,6 +776,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"iTunesAPISwiftUI Watch Extension/Preview Content\"";
 				DEVELOPMENT_TEAM = NT6HELKJQZ;
@@ -786,6 +789,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ThreadCo.iTunesAPISwiftUI.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
