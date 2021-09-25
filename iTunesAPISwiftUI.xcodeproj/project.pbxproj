@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		CD30E71426D8BCF6008C904D /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = CD30E71326D8BCF6008C904D /* SDWebImageSwiftUI */; };
+		CD707F0A26FF6C6000A14BBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD8EC82A24A40EDB0090D938 /* Assets.xcassets */; };
 		CD8EC84324A40EDB0090D938 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8EC84224A40EDB0090D938 /* Tests_iOS.swift */; };
 		CD8EC84E24A40EDB0090D938 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8EC84D24A40EDB0090D938 /* Tests_macOS.swift */; };
 		CD8EC85024A40EDB0090D938 /* iTunesAPISwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8EC82824A40ED30090D938 /* iTunesAPISwiftUIApp.swift */; };
 		CD8EC85124A40EDB0090D938 /* iTunesAPISwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8EC82824A40ED30090D938 /* iTunesAPISwiftUIApp.swift */; };
-		CD8EC85424A40EDB0090D938 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD8EC82A24A40EDB0090D938 /* Assets.xcassets */; };
 		CD8EC85524A40EDB0090D938 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD8EC82A24A40EDB0090D938 /* Assets.xcassets */; };
 		CD8EC86224A40F700090D938 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4D36302389708700516836 /* ContentView.swift */; };
 		CD8EC86324A40F710090D938 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4D36302389708700516836 /* ContentView.swift */; };
@@ -328,7 +328,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD8EC85424A40EDB0090D938 /* Assets.xcassets in Resources */,
+				CD707F0A26FF6C6000A14BBF /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
