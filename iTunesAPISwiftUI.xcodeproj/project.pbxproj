@@ -9,6 +9,20 @@
 /* Begin PBXBuildFile section */
 		CD30E71426D8BCF6008C904D /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = CD30E71326D8BCF6008C904D /* SDWebImageSwiftUI */; };
 		CD707F0A26FF6C6000A14BBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD8EC82A24A40EDB0090D938 /* Assets.xcassets */; };
+		CD707F1426FF768200A14BBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD707F1326FF768200A14BBF /* Assets.xcassets */; };
+		CD707F1B26FF768200A14BBF /* iTunesAPISwiftUI Watch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CD707F1A26FF768200A14BBF /* iTunesAPISwiftUI Watch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CD707F2226FF768200A14BBF /* iTunesAPISwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD707F2126FF768200A14BBF /* iTunesAPISwiftUIApp.swift */; };
+		CD707F2426FF768200A14BBF /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD707F2326FF768200A14BBF /* ComplicationController.swift */; };
+		CD707F2626FF768300A14BBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD707F2526FF768300A14BBF /* Assets.xcassets */; };
+		CD707F2926FF768300A14BBF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD707F2826FF768300A14BBF /* Preview Assets.xcassets */; };
+		CD707F2D26FF768300A14BBF /* iTunesAPISwiftUI Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = CD707F1126FF768100A14BBF /* iTunesAPISwiftUI Watch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CD707F4C26FF77FC00A14BBF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4D36302389708700516836 /* ContentView.swift */; };
+		CD707F5326FF781800A14BBF /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8EC82324A406C80090D938 /* SearchBar.swift */; };
+		CD707F5A26FF781C00A14BBF /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC6CF5C23957EED001A47D1 /* Resource.swift */; };
+		CD707F5B26FF781C00A14BBF /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4D3640238971C700516836 /* Track.swift */; };
+		CD707F5C26FF781C00A14BBF /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8EC82524A40BBD0090D938 /* DetailView.swift */; };
+		CD707F5D26FF781C00A14BBF /* TrackList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4D364A2389D3A100516836 /* TrackList.swift */; };
+		CD707F7226FF7A6D00A14BBF /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = CD707F7126FF7A6D00A14BBF /* SDWebImageSwiftUI */; };
 		CD8EC84324A40EDB0090D938 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8EC84224A40EDB0090D938 /* Tests_iOS.swift */; };
 		CD8EC84E24A40EDB0090D938 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8EC84D24A40EDB0090D938 /* Tests_macOS.swift */; };
 		CD8EC85024A40EDB0090D938 /* iTunesAPISwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8EC82824A40ED30090D938 /* iTunesAPISwiftUIApp.swift */; };
@@ -29,6 +43,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		CD707F1C26FF768200A14BBF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD4D36212389708700516836 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD707F1926FF768200A14BBF;
+			remoteInfo = "iTunesAPISwiftUI Watch Extension";
+		};
+		CD707F2B26FF768300A14BBF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD4D36212389708700516836 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD707F1026FF768100A14BBF;
+			remoteInfo = "iTunesAPISwiftUI Watch";
+		};
 		CD8EC83F24A40EDB0090D938 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CD4D36212389708700516836 /* Project object */;
@@ -45,6 +73,31 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		CD707F3126FF768300A14BBF /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CD707F1B26FF768200A14BBF /* iTunesAPISwiftUI Watch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD707F3526FF768300A14BBF /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				CD707F2D26FF768300A14BBF /* iTunesAPISwiftUI Watch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		CD4D36302389708700516836 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = ../iTunesAPISwiftUI/ContentView.swift; sourceTree = "<group>"; };
 		CD4D36322389708A00516836 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -52,6 +105,15 @@
 		CD4D36382389708A00516836 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD4D3640238971C700516836 /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
 		CD4D364A2389D3A100516836 /* TrackList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackList.swift; sourceTree = "<group>"; };
+		CD707F1126FF768100A14BBF /* iTunesAPISwiftUI Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iTunesAPISwiftUI Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD707F1326FF768200A14BBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CD707F1526FF768200A14BBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD707F1A26FF768200A14BBF /* iTunesAPISwiftUI Watch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "iTunesAPISwiftUI Watch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD707F2126FF768200A14BBF /* iTunesAPISwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunesAPISwiftUIApp.swift; sourceTree = "<group>"; };
+		CD707F2326FF768200A14BBF /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		CD707F2526FF768300A14BBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CD707F2826FF768300A14BBF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CD707F2A26FF768300A14BBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD8EC82324A406C80090D938 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		CD8EC82524A40BBD0090D938 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		CD8EC82824A40ED30090D938 /* iTunesAPISwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunesAPISwiftUIApp.swift; sourceTree = "<group>"; };
@@ -71,6 +133,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		CD707F1726FF768200A14BBF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD707F7226FF7A6D00A14BBF /* SDWebImageSwiftUI in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CD8EC82C24A40EDB0090D938 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -112,7 +182,10 @@
 				CD8EC83724A40EDB0090D938 /* macOS */,
 				CD8EC84124A40EDB0090D938 /* Tests iOS */,
 				CD8EC84C24A40EDB0090D938 /* Tests macOS */,
+				CD707F1226FF768100A14BBF /* iTunesAPISwiftUI Watch */,
+				CD707F1E26FF768200A14BBF /* iTunesAPISwiftUI Watch Extension */,
 				CD4D362A2389708700516836 /* Products */,
+				CD707F7026FF7A6D00A14BBF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,6 +196,8 @@
 				CD8EC83624A40EDB0090D938 /* iTunesAPISwiftUI.app */,
 				CD8EC83E24A40EDB0090D938 /* Tests iOS.xctest */,
 				CD8EC84924A40EDB0090D938 /* Tests macOS.xctest */,
+				CD707F1126FF768100A14BBF /* iTunesAPISwiftUI Watch.app */,
+				CD707F1A26FF768200A14BBF /* iTunesAPISwiftUI Watch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -143,6 +218,42 @@
 				CD4D36352389708A00516836 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CD707F1226FF768100A14BBF /* iTunesAPISwiftUI Watch */ = {
+			isa = PBXGroup;
+			children = (
+				CD707F1326FF768200A14BBF /* Assets.xcassets */,
+				CD707F1526FF768200A14BBF /* Info.plist */,
+			);
+			path = "iTunesAPISwiftUI Watch";
+			sourceTree = "<group>";
+		};
+		CD707F1E26FF768200A14BBF /* iTunesAPISwiftUI Watch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CD707F2126FF768200A14BBF /* iTunesAPISwiftUIApp.swift */,
+				CD707F2326FF768200A14BBF /* ComplicationController.swift */,
+				CD707F2526FF768300A14BBF /* Assets.xcassets */,
+				CD707F2A26FF768300A14BBF /* Info.plist */,
+				CD707F2726FF768300A14BBF /* Preview Content */,
+			);
+			path = "iTunesAPISwiftUI Watch Extension";
+			sourceTree = "<group>";
+		};
+		CD707F2726FF768300A14BBF /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CD707F2826FF768300A14BBF /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CD707F7026FF7A6D00A14BBF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		CD8EC82724A40ED30090D938 /* Shared */ = {
@@ -198,6 +309,43 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		CD707F1026FF768100A14BBF /* iTunesAPISwiftUI Watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD707F3226FF768300A14BBF /* Build configuration list for PBXNativeTarget "iTunesAPISwiftUI Watch" */;
+			buildPhases = (
+				CD707F0F26FF768100A14BBF /* Resources */,
+				CD707F3126FF768300A14BBF /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD707F1D26FF768200A14BBF /* PBXTargetDependency */,
+			);
+			name = "iTunesAPISwiftUI Watch";
+			productName = "iTunesAPISwiftUI Watch";
+			productReference = CD707F1126FF768100A14BBF /* iTunesAPISwiftUI Watch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		CD707F1926FF768200A14BBF /* iTunesAPISwiftUI Watch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD707F2E26FF768300A14BBF /* Build configuration list for PBXNativeTarget "iTunesAPISwiftUI Watch Extension" */;
+			buildPhases = (
+				CD707F1626FF768200A14BBF /* Sources */,
+				CD707F1726FF768200A14BBF /* Frameworks */,
+				CD707F1826FF768200A14BBF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iTunesAPISwiftUI Watch Extension";
+			packageProductDependencies = (
+				CD707F7126FF7A6D00A14BBF /* SDWebImageSwiftUI */,
+			);
+			productName = "iTunesAPISwiftUI Watch Extension";
+			productReference = CD707F1A26FF768200A14BBF /* iTunesAPISwiftUI Watch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 		CD8EC82E24A40EDB0090D938 /* iOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CD8EC85624A40EDB0090D938 /* Build configuration list for PBXNativeTarget "iOS" */;
@@ -205,10 +353,12 @@
 				CD8EC82B24A40EDB0090D938 /* Sources */,
 				CD8EC82C24A40EDB0090D938 /* Frameworks */,
 				CD8EC82D24A40EDB0090D938 /* Resources */,
+				CD707F3526FF768300A14BBF /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CD707F2C26FF768300A14BBF /* PBXTargetDependency */,
 			);
 			name = iOS;
 			packageProductDependencies = (
@@ -279,10 +429,16 @@
 		CD4D36212389708700516836 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1200;
+				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = ThreadCo;
 				TargetAttributes = {
+					CD707F1026FF768100A14BBF = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					CD707F1926FF768200A14BBF = {
+						CreatedOnToolsVersion = 12.4;
+					};
 					CD8EC82E24A40EDB0090D938 = {
 						CreatedOnToolsVersion = 12.0;
 					};
@@ -319,11 +475,30 @@
 				CD8EC83524A40EDB0090D938 /* macOS */,
 				CD8EC83D24A40EDB0090D938 /* Tests iOS */,
 				CD8EC84824A40EDB0090D938 /* Tests macOS */,
+				CD707F1026FF768100A14BBF /* iTunesAPISwiftUI Watch */,
+				CD707F1926FF768200A14BBF /* iTunesAPISwiftUI Watch Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		CD707F0F26FF768100A14BBF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD707F1426FF768200A14BBF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD707F1826FF768200A14BBF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD707F2926FF768300A14BBF /* Preview Assets.xcassets in Resources */,
+				CD707F2626FF768300A14BBF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CD8EC82D24A40EDB0090D938 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -357,6 +532,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		CD707F1626FF768200A14BBF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD707F2226FF768200A14BBF /* iTunesAPISwiftUIApp.swift in Sources */,
+				CD707F5326FF781800A14BBF /* SearchBar.swift in Sources */,
+				CD707F2426FF768200A14BBF /* ComplicationController.swift in Sources */,
+				CD707F5D26FF781C00A14BBF /* TrackList.swift in Sources */,
+				CD707F5C26FF781C00A14BBF /* DetailView.swift in Sources */,
+				CD707F5A26FF781C00A14BBF /* Resource.swift in Sources */,
+				CD707F4C26FF77FC00A14BBF /* ContentView.swift in Sources */,
+				CD707F5B26FF781C00A14BBF /* Track.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CD8EC82B24A40EDB0090D938 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -404,6 +594,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		CD707F1D26FF768200A14BBF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD707F1926FF768200A14BBF /* iTunesAPISwiftUI Watch Extension */;
+			targetProxy = CD707F1C26FF768200A14BBF /* PBXContainerItemProxy */;
+		};
+		CD707F2C26FF768300A14BBF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD707F1026FF768100A14BBF /* iTunesAPISwiftUI Watch */;
+			targetProxy = CD707F2B26FF768300A14BBF /* PBXContainerItemProxy */;
+		};
 		CD8EC84024A40EDB0090D938 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = CD8EC82E24A40EDB0090D938 /* iOS */;
@@ -546,14 +746,104 @@
 			};
 			name = Release;
 		};
+		CD707F2F26FF768300A14BBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"iTunesAPISwiftUI Watch Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = NT6HELKJQZ;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "iTunesAPISwiftUI Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ThreadCo.iTunesAPISwiftUI.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Debug;
+		};
+		CD707F3026FF768300A14BBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"iTunesAPISwiftUI Watch Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = NT6HELKJQZ;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "iTunesAPISwiftUI Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ThreadCo.iTunesAPISwiftUI.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Release;
+		};
+		CD707F3326FF768300A14BBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NT6HELKJQZ;
+				IBSC_MODULE = iTunesAPISwiftUI_Watch_Extension;
+				INFOPLIST_FILE = "iTunesAPISwiftUI Watch/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ThreadCo.iTunesAPISwiftUI.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Debug;
+		};
+		CD707F3426FF768300A14BBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NT6HELKJQZ;
+				IBSC_MODULE = iTunesAPISwiftUI_Watch_Extension;
+				INFOPLIST_FILE = "iTunesAPISwiftUI Watch/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ThreadCo.iTunesAPISwiftUI.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Release;
+		};
 		CD8EC85724A40EDB0090D938 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NT6HELKJQZ;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
@@ -564,7 +854,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ThreadCo.iTunesAPISwiftUI;
 				PRODUCT_NAME = iTunesAPISwiftUI;
-				PROVISIONING_PROFILE_SPECIFIER = "iTunes API SwiftUI Ad Hoc";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -577,8 +867,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NT6HELKJQZ;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
@@ -589,7 +879,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ThreadCo.iTunesAPISwiftUI;
 				PRODUCT_NAME = iTunesAPISwiftUI;
-				PROVISIONING_PROFILE_SPECIFIER = "iTunes API SwiftUI Ad Hoc";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -749,6 +1039,24 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		CD707F2E26FF768300A14BBF /* Build configuration list for PBXNativeTarget "iTunesAPISwiftUI Watch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD707F2F26FF768300A14BBF /* Debug */,
+				CD707F3026FF768300A14BBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD707F3226FF768300A14BBF /* Build configuration list for PBXNativeTarget "iTunesAPISwiftUI Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD707F3326FF768300A14BBF /* Debug */,
+				CD707F3426FF768300A14BBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		CD8EC85624A40EDB0090D938 /* Build configuration list for PBXNativeTarget "iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -800,6 +1108,11 @@
 
 /* Begin XCSwiftPackageProductDependency section */
 		CD30E71326D8BCF6008C904D /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CD30E71226D8BCF6008C904D /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+		CD707F7126FF7A6D00A14BBF /* SDWebImageSwiftUI */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = CD30E71226D8BCF6008C904D /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
 			productName = SDWebImageSwiftUI;
