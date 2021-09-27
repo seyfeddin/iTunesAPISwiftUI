@@ -18,6 +18,20 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             #if !os(macOS)
+            #if os(watchOS)
+            Group {
+                if resource.isLoading {
+                    ProgressView().progressViewStyle(progressStyle)
+                } else {
+                    TrackList(
+                        tracks: resource.value ?? [],
+                        searchText: $resource.query,
+                    commitBlock: { query in
+                        resource.search(query: query)
+                    })
+                }
+            }
+            #else
             Group {
                 if resource.isLoading {
                     ProgressView().progressViewStyle(progressStyle)
@@ -31,6 +45,7 @@ struct ContentView: View {
                 }
             }
             .navigationBarTitle(resource.query.isEmpty ? "iTunes API" : resource.query, displayMode: resource.query.isEmpty ? .inline : .large)
+            #endif
             #else
             Group {
                 if resource.isLoading {
