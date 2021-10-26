@@ -40,8 +40,6 @@
 		CD8EC86D24A40F7C0090D938 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8EC82324A406C80090D938 /* SearchBar.swift */; };
 		CD8EC86E24A40F7C0090D938 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4D3640238971C700516836 /* Track.swift */; };
 		CD8EC87124A40F7C0090D938 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC6CF5C23957EED001A47D1 /* Resource.swift */; };
-		CDB9A18827023E41008F199E /* Alamofire.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDB9A18427023E2D008F199E /* Alamofire.xcframework */; };
-		CDB9A18927023E41008F199E /* Alamofire.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CDB9A18427023E2D008F199E /* Alamofire.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,17 +96,6 @@
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CDB9A18A27023E41008F199E /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				CDB9A18927023E41008F199E /* Alamofire.xcframework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -142,7 +129,6 @@
 		CD8EC84924A40EDB0090D938 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD8EC84D24A40EDB0090D938 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		CD8EC84F24A40EDB0090D938 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CDB9A18427023E2D008F199E /* Alamofire.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Alamofire.xcframework; path = Carthage/Build/Alamofire.xcframework; sourceTree = "<group>"; };
 		CDC6CF5C23957EED001A47D1 /* Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -159,7 +145,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDB9A18827023E41008F199E /* Alamofire.xcframework in Frameworks */,
 				CD30E71426D8BCF6008C904D /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,7 +252,6 @@
 		CD707F7026FF7A6D00A14BBF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CDB9A18427023E2D008F199E /* Alamofire.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -370,7 +354,6 @@
 				CD8EC82C24A40EDB0090D938 /* Frameworks */,
 				CD8EC82D24A40EDB0090D938 /* Resources */,
 				CD707F3526FF768300A14BBF /* Embed Watch Content */,
-				CDB9A18A27023E41008F199E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
